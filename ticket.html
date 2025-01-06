@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .ticket-booking {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+
+      }
+      video {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        object-fit: fill;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+      }
+
+      .rides {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .rides .cards {
+        height: 60vh;
+        width: 10vw;
+        transition: width 1s ease;
+
+      }
+      .rides .cards img {
+        height: 50vh;
+        border-radius: 0.8rem;
+        width: 350px;
+        margin: 10px;
+      }
+      .rides .cards:hover{
+        width: 50vh;
+        z-index: 1;
+      }
+      .rides .cards img:hover{
+            border: 2px solid white;
+      }
+      .rides:hover .cards:not(:hover) {
+        z-index: 1;
+      }
+      form input {
+        background-color: #474747;
+        border-radius: 1rem;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+      }
+      .container {
+   background-color: rgba(255, 255, 255, 0.111);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    height: 50vh;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #3182ce;
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="ticket-booking">
+        <video src="spaceship.mp4" autoplay loop></video>
+        <div class="container">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input placeholder="Your name" id="name" type="text">
+            </div>
+        
+            <div class="form-group">
+                <label for="phone">Phone No</label>
+                <input type="tel" name="" id="phone" placeholder="Your Phone">
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input placeholder="Your city" id="city" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input placeholder="Your state" id="state" type="text">
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="zip">ZIP</label>
+                    <input placeholder="Your ZIP code" id="zip" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="">Select a country</option>
+                        <optgroup label="Africa">
+                            <option value="AF">Afghanistan</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AO">Angola</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="AM">Armenia</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="YE">Yemen</option>
+                        </optgroup>
+                        <optgroup label="South America">
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brazil</option>
+                            <option value="VE">Venezuela</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-group submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+
+
+        </div>
+              <div class="rides">
+                <div class="cards">
+                  <img src="./images/s1.jpg" alt="" />
+                </div>
+        
+                <div class="cards">
+                  <img src="./images/s2.jpg" alt="" />
+                </div>
+        
+                <div class="cards">
+                  <img src="./images/s3.jpg" alt="" />
+                </div>
+        
+                <div class="cards">
+                  <img src="./images/s4.jpg" alt="" />
+                </div>
+                <div class="cards">
+                  <img src="./images/s5.jpg" alt="" />
+                </div>
+                <div class="cards">
+                  <img src="./images/s6.jpg" alt="" />
+                </div>
+                <div class="cards">
+                  <img src="./images/s7.jpg" alt="" />
+                </div>
+                <div class="cards">
+                  <img src="./images/s8.jpg" alt="" />
+                </div>
+              </div>
+    </div>
+  </body>
+</html>

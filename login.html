@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreX</title>
+    <link rel="stylesheet" href="mod.css">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline>
+        <source src="bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="wrapper login visible">
+        <form action="" id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required id="loginUsername">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="loginPassword">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a class="newAcc">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper register invisible">
+        <form action="" id="registerForm">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Name" required id="regName">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required id="regUsername">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="regPassword">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p>Already have an account? <a class="acc">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
